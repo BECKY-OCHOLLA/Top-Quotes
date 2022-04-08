@@ -8,15 +8,14 @@ import{Quote} from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quote:Quote[]=[
-    new Quote(1,'Visions are worth fighting for.Why spend your life making someone else dreams?-Tim Burton',0,0),
+    new Quote(1,'If you look at what you have in life, you will always have more. If you look at what you do not have in life, you will never have enough. -Oprah Winfrey',0,0),
     new Quote(2,'Hey bug! Manically packing up your office in a cold sweat. What is with the downward spiral honey?— Walter the Lovebug (voice)',0,0),
-    new Quote(3,'Be gentle with yourself,you are doing the best you can',0,0)
+    new Quote(3,'Your time is limited, so do not waste it living someone else life. Do not be trapped by dogma – which is living with the results of other people thinking. -Steve Jobs',0,0)
 
   ];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+constructor(){}
+ngOnInit(): void {
+    
+}
+  
 }
