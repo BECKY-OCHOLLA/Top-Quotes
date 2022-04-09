@@ -1,4 +1,8 @@
-<ul *ngFor='let quote of quote'>
-    <li >{{quote.quote}}</li>
+<div *ngFor='let quote of quote;let i=index'>
+    <div class="mt-3">{{quote.author}}</div>
+    <div>
+        <button (click)='toggleQuote(i)'>Read more</button>
+    </div> 
+    <app-quote-detail *ngIf='quote.showQuote'[quote]='quote'></app-quote-detail>
 
-</ul>
+</div>

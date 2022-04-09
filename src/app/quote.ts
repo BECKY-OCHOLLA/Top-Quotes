@@ -1,14 +1,9 @@
 export class Quote {
-    id:number;
-    quote:string;
-    upvote:number
-    downvote:number
-
-    constructor(id:number,quote:string,upvote:number,downvote:number){
-        this.id=id;
-        this.quote=quote
-        this.upvote=upvote
-        this.downvote=downvote
+    showQuote:boolean;
+    constructor(public id:number,public author:string, public quote:string,public upvote:number,public downvote:number){
+        this.showQuote=false;
 
     }
 }
+    
+
