@@ -13,7 +13,9 @@ export class QuotesComponent implements OnInit {
     new Quote(3,'By-Steve Jobs','Your time is limited, so do not waste it living someone else life. Do not be trapped by dogma – which is living with the results of other people thinking. ',0,0)
 
   ];
-  
+  toggleQuote(index){
+    this.quote[index].showQuote = !this.quote[index].showQuote;
+  }
 constructor(){}
 ngOnInit(): void {
     
