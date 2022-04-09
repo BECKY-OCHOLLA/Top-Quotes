@@ -1,4 +1,4 @@
-<div *ngFor='let quote of quote;let i=index'>
+ <div *ngFor='let quote of quote;let i=index'>
     
     <div class="mt-3"appStrikethrough>{{quote.author}}due on {{quote.completeDate|date|uppercase}} <button (click)='toggleQuote(i)'>Read more</button></div>
    
@@ -7,10 +7,15 @@
             
         <button class="ml-5 mt-3">downvote {{quote.downvote}}</button>    
     </div> 
+
     
     <app-quote-detail *ngIf='quote.showQuote'[quote]='quote'(isComplete) = 'completeQuote($event,i)'></app-quote-detail>
 
 
    
   
-</div>
+</div>  
+
+
+
+

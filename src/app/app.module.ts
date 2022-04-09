@@ -7,6 +7,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteDirective } from './quote.directive';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { QuoteDirective } from './quote.directive';
     NavBarComponent,
     QuotesComponent,
     QuoteDetailComponent,
-    QuoteDirective
+    QuoteDirective,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
