@@ -14,14 +14,14 @@ export class QuotesComponent implements OnInit {
 
   ];
   toggleQuote(index){
-    this.quote[index].showQuote = !this.quote[index].showQuote;
+   this.quote[index].showQuote = !this.quote[index].showQuote;
 
-  }
+   }
 
   completeQuote(isComplete, index){
     if (isComplete) {
       this.quote.splice(index,1);
-    }
+   }
   }
 constructor(){}
 ngOnInit(): void {
