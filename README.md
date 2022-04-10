@@ -12,6 +12,7 @@ Becky Ocholla
 4.They can see the number of upvotes and number of   downvotes for each quote.
 
 ## Live Link
+https://becky-ocholla.github.io/Top-Quotes/
 
 
 ## Development server
