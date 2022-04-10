@@ -5,6 +5,9 @@ import { Directive,ElementRef } from '@angular/core';
 })
 export class QuoteDirective {
 
-  constructor(private elem:ElementRef) { }
+  
+  constructor(private elem:ElementRef) { 
+    this.elem.nativeElement.style.backgroundColor='orange'
+  }
 
 }

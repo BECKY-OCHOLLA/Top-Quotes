@@ -1,5 +1,7 @@
-<p>
-    {{quote.quote}}
-</p>
-<p>This quote will be complete in {{quote.completeDate|date}} days</p>
-<button (click)= 'quoteComplete(true)'>Delete</button>
+
+<div class="vote" >
+    <button (click)=upvote()>upvote  {{quote.upvote}}</button>
+    <button (click)=downvote() class="ml-3">downvote  {{quote.downvote}}</button>
+    <button (click)="quoteComplete(true) " class="ml-3">Delete quote</button>
+        
+</div>

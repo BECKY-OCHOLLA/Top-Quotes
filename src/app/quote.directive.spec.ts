@@ -1,4 +1,4 @@
-import { QuoteDirective } from './quote.directive';
+import { QuoteDirective, } from './quote.directive';
 
 describe('QuoteDirective', () => {
   it('should create an instance', () => {
